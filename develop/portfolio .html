@@ -8,12 +8,12 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
    </head>
    <body>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <!-- background image -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       
-         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Robert VanScoy</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -32,34 +32,89 @@
                </ul>
             </div>
          </nav>
-         <!-- xl-view layout   -->
-         <div class="d-none d-xl-block">
+
+          <!-- xl-view layout   --> 
+         <div class="d-none d-xl-block"id="mainContent">
             <div class="row pt-3">
                <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
                   <a href="https://vanscoyro.github.io/password_generator/">
-                     <img src="assets/pw_generator.PNG" alt="placeholder" class="float-left">
+                     <img src="../assets/pw_generator.PNG" alt="Password Generator" class="float-left" height="350px" width="350px">
                   </a>   
                   <p>Simple password generator program that prompts user for preference then generates a password based on input</p>
                </div>
                <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
-                  <img src="https://via.placeholder.com/350" alt="placeholder">
+                  <a href="https://github.com/vanscoyro/Team_Profile_Generator">
+                     <img src="../assets/team.jpg" alt="placeholder"class="float-left" height="350px" width="350px">
+                  </a>
+                  <p>Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person</p>
                </div>
-            </div>
-            <div class="row pt-3">
-               <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
-                  <img src="https://via.placeholder.com/350 " alt="placeholder">
+               <div class="row pt-3">
+                  <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
+                     <a href="https://github.com/vanscoyro/webQuiz">
+                        <img src="../assets/quizApp1.jpg" alt="placeholder"class="float-left" height="350px" width="350px">
+                     </a>
+                     <p>This web application displays a quiz that is generated from an array list of questions and answers. It is dynamically added to when user selects answers.</p>
+                  </div>
+                  <div class="row pt-3" style="width: 650px;">
+
+                  
+                     <div class="c-wrapper">
+         
+                        <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                           <li data-target="#myCarousel" data-slide-to="1"></li>
+                           <li data-target="#myCarousel" data-slide-to="2"></li>
+            
+                        </ol>
+                     
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                     
+                           <div class="item active">
+                              <img src="../assets/pw1.JPG" alt="Password generator">
+                              <div class="carousel-caption">
+                              
+                              <h3><a href="https://github.com/vanscoyro/password_generator">Password Generator</a></h3>
+                              <p><span>Password Generator Web Application that takes in user input and generates a password</span></p>
+                              
+                              </div>
+                           </div>
+                     
+                           <div class="item">
+                              <img src="../assets/team.jpg" alt="Team Generator">
+                              <div class="carousel-caption">
+                              <h3><a href="https://github.com/vanscoyro/Team_Profile_Generator">Team Profile Generator</a></h3>
+                              <p><span>Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person</span></p>
+                              </div>
+                           </div>
+                        
+                           <div class="item">
+                              <img src="../assets/quizApp1.jpg" alt="Quiz App">
+                              <div class="carousel-caption">
+                              <h3><a href="https://github.com/vanscoyro/webQuiz">Quiz App</a></h3>
+                              <p><span>This web application displays a quiz that is generated from an array list of questions and answers. It is dynamically added to when user selects answers.</span></p>
+                              </div>
+                           </div>
+                     
+               
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                           <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                           <span class="sr-only">Next</span>
+                        </a>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
                </div>
-               <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
-                  <img src="https://via.placeholder.com/350" alt="placeholder">
-               </div>
-            </div>
-            <div class="row pt-3">
-               <div class="col-md-5 pt-3 pb-3 m-5 bg-dark">
-                  <img src="https://via.placeholder.com/350" alt="placeholder">
-               </div>
-            </div>
          </div>
-         <!-- large-view layout   -->
+      <!-- large-view layout   -->
          <div class="d-none d-lg-block d-xl-none">
             <div class="row pt-3 ">
                <div class="col-md-5 pt-5 pb-5 ml-5 mb-5 mt-5 bg-dark">
@@ -86,7 +141,7 @@
                </div>
             </div>
          </div>
-         <!-- medium-view layout   -->
+      <!-- medium-view layout   -->
          <div class="d-none d-md-block d-lg-none">
             <div class="container pt-3 pb-3">
                <div class="col pt-3 pb-3 bg-dark text-right">
@@ -113,7 +168,7 @@
                </div>
             </div>
          </div>
-         <!-- small view layout -->
+      <!-- small view layout -->
          <div class="d-none d-sm-block d-md-none">
             <div class="container">
                <div class="row pt-3">
@@ -146,7 +201,7 @@
                </div>
             </div>
          </div>
-         <!-- xs-view layout   -->
+      <!-- xs-view layout   -->
          <div class="d-block d-sm-none">
             <div class="container pt-3 pb-3">
                <div class="row">

@@ -1,0 +1,99 @@
+  body{
+      background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2019/4-space.jpg);
+  }
+
+  article{
+      color: white;
+      backdrop-filter: blur(10px);
+  }
+
+  p{
+      text-align: center;
+  }
+
+  a{
+    color: white !important;
+  }
+
+   * {
+      box-sizing: border-box;
+    }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+
+  .carousel {
+    width:auto;
+    height:auto;
+    overflow: hidden ;
+    right:0 !important; 
+    border-radius: 55px 55px 55px 55px;
+  }
+
+ div.carousel-caption{
+   color: white;
+   background: rgba(0, 0, 0, 0.5);
+   top: 50%;
+   transform: translateY(-50%);
+   bottom: initial;
+   border-radius: 55px 55px 55px 55px;
+   opacity:0;
+   transition:500ms ease-in-out;
+ }
+
+ div.carousel-caption p{
+  position:relative;
+  margin:0.1em;
+ }
+
+ p span{
+  background: linear-gradient(to bottom right, #0d2f77 0%, #c0c8f6 100%);
+
+ }
+  .carousel-control.left, .carousel-control.right {
+    left: 0;
+    z-index: 1;
+  }
+
+  .carousel-indicators li { 
+    
+    visibility: hidden; 
+  }
+
+  .carousel-inner:hover .carousel-caption{
+    opacity:1;
+  }
+
+
+  .carousel-inner img {
+    margin: auto;
+  }
+
+  .c-wrapper{
+    margin: auto;
+    
+  }
+  #mainContent p{
+    color: white;
+  
+
+}
+
+#mainContent img{
+    object-fit: cover;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
